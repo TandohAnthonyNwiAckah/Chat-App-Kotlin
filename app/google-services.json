@@ -1,0 +1,55 @@
+{
+  "project_info": {
+    "project_number": "1025520187832",
+    "firebase_url": "https://tutorials-6e83c.firebaseio.com",
+    "project_id": "tutorials-6e83c",
+    "storage_bucket": "tutorials-6e83c.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:1025520187832:android:3f73edba6a6772d0",
+        "android_client_info": {
+          "package_name": "com.tanamo.app"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "1025520187832-23tif92lklrahoed85u6eep6qn8f25j4.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.tanamo.app",
+            "certificate_hash": "679e8dff8b2bd510ecc696eb9477a9d74ead4fe3"
+          }
+        },
+        {
+          "client_id": "1025520187832-acc049sh3sevp1nc57ursf1r0gq4cs4g.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAeBJ7fNs9wSHPTJfokoH0gRH_ZpeTX66s"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 2,
+          "other_platform_oauth_client": [
+            {
+              "client_id": "1025520187832-acc049sh3sevp1nc57ursf1r0gq4cs4g.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

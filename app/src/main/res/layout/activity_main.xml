@@ -1,34 +1,101 @@
 <?xml version="1.0" encoding="utf-8"?>
+
 <android.support.design.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
-    xmlns:tools="http://schemas.android.com/tools"
-    android:layout_width="match_parent"
-    android:layout_height="match_parent"
-    android:background="@drawable/bg"
-    tools:context="com.tanamo.chatapp.ui.MainActivity">
+    style="@style/mm">
 
-    <android.support.design.widget.AppBarLayout
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:theme="@style/AppTheme.AppBarOverlay">
+    <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        style="@style/mm"
+        android:background="@drawable/bg"
+        android:orientation="vertical">
 
-        <android.support.v7.widget.Toolbar
-            android:id="@+id/toolbar"
+        <android.support.design.widget.AppBarLayout
+            style="@style/tb"
+            android:theme="@style/ThemeOverlay.AppCompat.Dark.ActionBar">
+
+            <android.support.v7.widget.Toolbar
+                android:id="@+id/toolbar"
+                style="@style/tb"
+                android:background="?attr/colorPrimary"
+                app:layout_scrollFlags="scroll|enterAlways"
+                app:popupTheme="@style/ThemeOverlay.AppCompat.Light"
+                app:title="@string/app_name" />
+
+        </android.support.design.widget.AppBarLayout>
+
+        <View
             android:layout_width="match_parent"
-            android:layout_height="?attr/actionBarSize"
-            android:background="?attr/colorPrimary"
-            app:popupTheme="@style/AppTheme.PopupOverlay" />
+            android:layout_height="1dp"
+            android:layout_gravity="bottom"
+            android:background="@drawable/shadower" />
 
-    </android.support.design.widget.AppBarLayout>
+        <FrameLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1">
 
-    <include layout="@layout/content_main" />
+            <ListView
+                android:id="@+id/lise"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:divider="@android:color/transparent"
+                android:dividerHeight="16dp"
+                android:transcriptMode="alwaysScroll" />
 
-    <android.support.design.widget.FloatingActionButton
-        android:id="@+id/fab"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_gravity="bottom|end"
-        android:layout_margin="@dimen/fab_margin"
-        app:srcCompat="@android:drawable/ic_dialog_email" />
+        </FrameLayout>
+
+        <View
+            android:layout_width="wrap_content"
+            android:layout_height="3dp"
+            android:layout_gravity="bottom"
+            android:layout_marginLeft="23dp"
+            android:layout_marginRight="23dp"
+            android:background="@drawable/shadower" />
+
+        <RelativeLayout
+            style="@style/mw"
+            android:layout_marginBottom="5dp"
+            android:layout_marginLeft="5dp"
+            android:layout_marginRight="5dp"
+            android:background="@drawable/rounder"
+            android:padding="1dp">
+
+            <ImageView
+                android:id="@+id/emo"
+                style="@style/ft"
+                android:layout_alignBottom="@+id/messa"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentStart="true"
+                android:padding="4dp"
+                android:src="@drawable/smiley" />
+
+            <EditText
+                android:id="@+id/messa"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:layout_toEndOf="@+id/emo"
+                android:layout_toLeftOf="@+id/imag"
+                android:layout_toRightOf="@+id/emo"
+                android:layout_toStartOf="@+id/imag"
+                android:layout_weight="1"
+                android:hint="@string/type_a_message"
+                android:maxLines="4"
+                android:textColor="#000"
+                android:textColorHint="#FFF"
+                android:textSize="16sp" />
+
+            <ImageView
+                android:id="@+id/imag"
+                style="@style/ft"
+                android:layout_alignBottom="@+id/messa"
+                android:layout_alignParentEnd="true"
+                android:layout_alignParentRight="true"
+                android:padding="4dp"
+                android:src="@android:drawable/ic_menu_send" />
+
+        </RelativeLayout>
+
+    </LinearLayout>
 
 </android.support.design.widget.CoordinatorLayout>

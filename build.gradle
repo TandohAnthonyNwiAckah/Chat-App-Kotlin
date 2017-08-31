@@ -10,6 +10,8 @@ buildscript {
         classpath 'com.android.tools.build:gradle:3.0.0-alpha3'
         classpath "org.jetbrains.kotlin:kotlin-gradle-plugin:$kotlin_version"
 
+        classpath 'com.google.gms:google-services:3.1.0'
+
         // NOTE: Do not place your application dependencies here; they belong
         // in the individual module build.gradle files
     }
@@ -34,7 +36,7 @@ ext {
     // SDK and tools
     buildToolsVersion = '26.0.0'
     compileSdkVersion = 26
-    minSdkVersion = 14
+    minSdkVersion = 16
     targetSdkVersion = 26
     ankoVersion = "0.9.1a"
     // Application dependencies

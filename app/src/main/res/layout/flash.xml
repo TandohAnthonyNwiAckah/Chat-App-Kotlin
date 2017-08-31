@@ -1,13 +1,14 @@
 <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    android:layout_width="match_parent"
-    android:layout_height="match_parent"
-    android:background="@drawable/bg">
+    style="@style/mm"
+    android:background="@drawable/ic_bg">
 
 
     <TextView
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="20dp"
+        style="@style/mw"
+        android:layout_alignLeft="@+id/title"
+        android:layout_alignParentTop="true"
+        android:layout_alignStart="@+id/title"
+        android:layout_marginTop="72dp"
         android:fontFamily="casual"
         android:gravity="center"
         android:text="@string/welcome_to_chatapp"
@@ -18,8 +19,7 @@
 
     <ProgressBar
         android:id="@+id/pro"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
+        style="@style/ww"
         android:layout_centerInParent="true"
         android:layout_marginEnd="8dp"
         android:layout_marginStart="8dp"
@@ -28,22 +28,14 @@
 
     <TextView
         android:id="@+id/title"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
+        style="@style/mw"
         android:layout_below="@+id/pro"
-        android:layout_margin="10dp"
+        android:layout_marginTop="20dp"
         android:gravity="center"
         android:text="@string/loading"
-        android:textAppearance="?android:attr/textAppearanceLarge"
         android:textColor="@android:color/white"
-        android:textSize="20sp" />
-
-
-    <android.support.constraint.Guideline
-        android:id="@+id/guideline"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:orientation="horizontal" />
+        android:textSize="20sp"
+        android:textStyle="italic" />
 
 
 </RelativeLayout>
