@@ -32,7 +32,7 @@ import com.tanamo.app.R
 class Flash : AppCompatActivity() {
 
 
-    val COUNTS = 600
+    val COUNTS = 15000
 
 //    This is the splash  activity class.
 

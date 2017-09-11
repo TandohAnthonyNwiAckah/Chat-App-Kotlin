@@ -6,10 +6,7 @@
     <string name="success">Signed in successful!</string>
     <string name="failed">Sign in failed, please try again later</string>
     <string name="type_a_message">type a message...</string>
-
     <string name="invitation_message">Please join us for a group chat</string>
     <string name="invitation_cta">Call to action</string>
     <string name="invitation_title">ChatApp</string>
-
-
 </resources>

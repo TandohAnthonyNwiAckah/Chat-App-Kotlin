@@ -9,7 +9,6 @@ import android.view.MenuItem
 import android.widget.Toast
 import com.firebase.ui.auth.AuthUI
 import com.firebase.ui.database.FirebaseListAdapter
-import com.google.android.gms.appinvite.AppInviteInvitation
 import com.google.firebase.auth.FirebaseAuth
 import com.google.firebase.database.FirebaseDatabase
 import com.tanamo.app.R
@@ -79,9 +78,9 @@ class MainActivity : AppCompatActivity() {
 
             R.id.sign_out -> signOut()
 
-            R.id.invite -> invitation()
+//            R.id.invite -> invitation()
 
-            R.id.gallery -> gallery()
+      //      R.id.gallery -> gallery()
 
         }
         return super.onOptionsItemSelected(item)
@@ -91,7 +90,7 @@ class MainActivity : AppCompatActivity() {
     private fun signOut() {
         AuthUI.getInstance().signOut(this)
                 .addOnCompleteListener {
-                    Toast.makeText(this@MainActivity, "Log out Success!", Toast.LENGTH_SHORT).show()
+                    Toast.makeText(this@MainActivity,"Log out Success!", Toast.LENGTH_SHORT).show()
                     finish()
                 }
 
@@ -118,19 +117,19 @@ class MainActivity : AppCompatActivity() {
         lise!!.adapter = adapter
     }
 
-    private fun invitation() {
-        val intent = AppInviteInvitation.IntentBuilder(getString(R.string.invitation_title))
-                .setMessage(getString(R.string.invitation_message))
-                .setCallToActionText(getString(R.string.invitation_cta))
-                .build()
-        startActivity(intent)
-    }
+//    private fun invitation() {
+//        val intent = AppInviteInvitation.IntentBuilder(getString(R.string.invitation_title))
+//                .setMessage(getString(R.string.invitation_message))
+//                .setCallToActionText(getString(R.string.invitation_cta))
+//                .build()
+//        startActivity(intent)
+//    }
 
-    private fun gallery() {
-        val galleryIntent = Intent(Intent.ACTION_PICK,
-                android.provider.MediaStore.Images.Media.EXTERNAL_CONTENT_URI)
-        startActivityForResult(galleryIntent, IMAGE_GALLERY)
-    }
+//    private fun gallery() {
+//        val galleryIntent = Intent(Intent.ACTION_PICK,
+//                android.provider.MediaStore.Images.Media.EXTERNAL_CONTENT_URI)
+//        startActivityForResult(galleryIntent, IMAGE_GALLERY)
+//    }
 
 
 }

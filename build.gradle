@@ -39,7 +39,6 @@ ext {
     minSdkVersion = 16
     targetSdkVersion = 26
     ankoVersion = "0.9.1a"
-    // Application dependencies
     supportLibraryVersion = '26.0.0-alpha1'
 }
 
